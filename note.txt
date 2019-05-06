@@ -1,0 +1,83 @@
+<table>
+        <tr>
+            <?php
+                for($i=0;$i <= 10; $i++){
+                    $line = "line".$i;
+                foreach($line as $color){
+                    ?>
+                            <td> <?php echo $color. " "; ?> </td>
+                    <?php
+                }
+            }
+            ?>
+            </tr>
+        </table>
+===========================================
+foreach($myarray as $line){
+                    if (($line[0] == $his_user) and ($line[1] == $his_pass)){
+                        $indentif = "true";
+                        //$error.=$ilne[0]." ".$lnie[1]." ";
+                    }
+                    else{
+                        $indentif = "false";
+                    }
+                }
+               if( $indentif == "true"){
+                   header("location:home.php");
+               }
+                else{
+                    $error = "Vous identification est invalid";
+               }
+=================================================
+ echo '<table>';
+                foreach($myarray2 as $line2){
+                    if($cmpt==0){
+                        echo ('<tr class="header_table">');
+                        foreach($line2 as $key2){
+                            echo ('<td>');
+                            if (($key2 == $ine2[4]) and ($key2 == "")){
+                                $mnt =  ($line2[2] * $line2[3]);
+                                 echo ($mnt);
+                            }
+                            else{
+                                echo ($key2);
+                            }
+                        
+                            echo ('</td>');
+                        }
+                    echo ('</tr>');
+                    }
+                    else if ($line2[2] < 10){
+                        echo ('<tr class="under_ten">');
+                        foreach($line2 as $key2){
+                            echo ('<td>');
+                            if (($key2 == $ine2[4]) and ($key2 == "")){
+                                $mnt =  ($line2[2] * $line2[3]);
+                                 echo ($mnt);
+                            }
+                            else{
+                                echo ($key2);
+                            }
+                        
+                            echo ('</td>');
+                        }
+                    }
+                    else{
+                        echo ('<tr>');
+                        foreach($line2 as $key2){
+                            echo ('<td>');
+                            if (($key2 == $ine2[4]) and ($key2 == "")){
+                                $mnt =  ($line2[2] * $line2[3]);
+                                echo ($mnt);
+                            }
+                            else{
+                                echo ($key2);
+                            }
+                        
+                            echo ('</td>');
+                        }
+                    echo ('</tr>');
+                    }
+                    $cmpt++;
+                }
+            echo '</table>';
